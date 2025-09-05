@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+    
+
+
+    <div id="page" class="s-pagewrap ss-home">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="row s-header__inner width-sixteen-col">
+
+                <div class="s-header__block">
+                       
+               
+
+                
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">
+    
+                    <ul class="s-header__menu-links">
+                        <li><a href="binil.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->
+
+                    <div class="s-header__contact">
+                        <a href="contact.html" class="btn btn--primary s-header__contact-btn">Let's Work Together</a>                        
+                    </div> <!-- s-header__contact -->
+    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+
+        </header>
+
+
+
+
+    <section id="contact" class="contact-section">
+  <div class="contact-container">
+
+    <!-- Left Side -->
+    <div class="contact-info">
+      <h2>Contact Me</h2>
+      <address>
+        <p><i class="fas fa-paper-plane"></i> <a href="mailto:binilmathewva@gmail.com">binilmathewva@gmail.com</a></p>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:+919605694767">+91 9605694767</a></p>
+      </address>
+
+      <div class="social-links">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      </div>
+
+     <a href="assets/binilresume.pdf" download="binilresume.pdf" class="btn">
+  Download Resume
+</a>
+    </div>
+
+    <!-- Right Side -->
+    <div class="contact-form">
+      <form id="contact-form"> <!-- ✅ added ID -->
+        <label for="name">Your Name</label>
+        <input id="name" type="text" name="user_name" required> <!-- ✅ changed name to match EmailJS -->
+
+        <label for="email">Your Email</label>
+        <input id="email" type="email" name="user_email" required> <!-- ✅ changed name to match EmailJS -->
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+      <script>
+      (function() {
+  emailjs.init("GxAbC123xyz456"); // 👈 Your real Public Key
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm('service_ab12cd', 'template_ef34gh', this) // 👈 Your real Service ID + Template ID
+    .then(() => {
+      alert('Message sent successfully!');
+      this.reset();
+    }, (error) => {
+      alert('Failed to send message: ' + JSON.stringify(error));
+    });
+});
+      </script>
+    </div>
+  </div>
+
+  <p class="copyright">Copyright © Binil</p>
+</section>
+
+</body>
+</html>
