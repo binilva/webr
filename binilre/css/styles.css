@@ -637,3 +637,69 @@ section {
 
 
 
+
+
+
+
+
+/* =========================
+   SIGN UP
+========================= */
+.signupform-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;  /* centers text inside */
+}
+
+.signupform-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.signupform-container p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.signupform-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.signupform-container input,
+.signupform-container select,
+.signupform-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.signupform-container textarea {
+  resize: none;
+}
+
+.signupform-container button {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.signupform-container button:hover {
+  background: #333;
+}
